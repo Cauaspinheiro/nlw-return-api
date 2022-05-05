@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14-alpine3.14
+    environment:
+      POSTGRES_USER: nlw-return
+      POSTGRES_PASSWORD: nlw-return
+      POSTGRES_DB: nlw-return
+      PG_DATA: /var/lib/postgresql/data
+    networks:
+      - nlw-return-network
+    volumes:
+      - nlw-return-data:/var/lib/postgresql/data
+    ports:
+      - '3332:5432'
+
+networks:
+  nlw-return-network:
+volumes:
+  nlw-return-data:
