@@ -1,27 +1,12 @@
 import { Injectable } from '@nestjs/common'
-import { MailerService } from 'src/mailer/mailer.service'
-
-import { PrismaService } from 'src/shared/prisma.service'
-import { CreateFeedbackDto } from './dtos/create-feedback.dto'
+import { PostFeedbackRequestDto } from './requests/post-feedbacks-request.dto'
+import { SubmitFeedbackUseCase } from './use-cases/submit-feedback.use-case'
 
 @Injectable()
 export class FeedbacksService {
-  constructor(
-    private prismaService: PrismaService,
-    private mailerService: MailerService,
-  ) {}
+  constructor(private submitFeedbackUseCase: SubmitFeedbackUseCase) {}
 
-  async create(data: CreateFeedbackDto) {
-    const feedback = await this.prismaService.feedback.create({
-      data,
-    })
-
-    await this.mailerService.send(
-      'Cauã Pinheiro <cauaspinheiro@gmail.com>',
-      `<p>${data.comment}</p>`,
-      'Novo feedback',
-    )
-
-    return feedback
+  async create(data: PostFeedbackRequestDto) {
+    await this.submitFeedbackUseCase.run(data)
   }
 }
