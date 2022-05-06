@@ -23,7 +23,9 @@ export class SubmitFeedbackUseCase {
 
     await this.mailerService.send({
       to: 'Cauã Pinheiro <cauaspinheiro@gmail.com>',
-      body: `<p>${data.comment}</p>\n<p>${data.type}</p>`,
+      body: `<p>${data.comment}</p>\n<p>${data.type}</p>\n${
+        data.screenshot ? `<img src=${data.screenshot} />` : ``
+      }`,
       subject: 'Novo feedback',
     })
   }
