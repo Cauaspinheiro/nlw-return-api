@@ -18,7 +18,7 @@ This API collect the feedbacks from the frontend, store them in the database and
 
 ### CI/CD
 
-The API contains the setup for [Github Actions]() run the tests (CI) and deploy to the cloud (CD)
+The API contains the setup for [Github Actions](https://github.com/features/actions) run the tests (CI) and deploy to the cloud (CD)
 
 The action config is in the following file: `.github/workflows/ci-cd.yml`
 
@@ -54,13 +54,13 @@ Used in this project for:
 
 [Official website](https://docker.com)
 
-#### ESLint
+### ESLint
 
 ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. (Source: ESLint)
 
 [Official website](https://github.com/eslint/eslint)
 
-#### Prettier
+### Prettier
 
 Prettier is a code formatter. (Source: Prettier)
 
@@ -72,9 +72,9 @@ Jest is a delightful JavaScript Testing Framework with a focus on simplicity. (S
 
 [Official website](https://jestjs.io/)
 
-## Usage
+## 💻 Usage
 
-You can run this API in you local machine by following the [Instaling locally](#installing-locally) guide.
+You can run this API in you local machine by following the [Installation](#constructionworker-installation) guide.
 
 ## :construction_worker: Installation
 
@@ -122,7 +122,7 @@ key: `DATABASE_URL`
 
 The [postgres connection string](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING) to the database
 
-### STMP server config
+#### STMP server config
 
 keys: `SMTP_USER` - `SMTP_PASSWORD` -  `SMTP_PORT` -  `SMTP_HOST`
 
@@ -201,6 +201,10 @@ yarn test
 ```
 
 Run the tests using Jest, you can see all the flags you can pass to this command [here](https://jestjs.io/docs/cli#reference).
+
+## 🔗 Useful links
+
+- Web: https://github.com/cauaspinheiro/nlw-return-web
 
 ---
 
