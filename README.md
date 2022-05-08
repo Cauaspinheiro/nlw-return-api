@@ -14,7 +14,7 @@ You can see more in the [official website](https://nlw-return-i18n.vercel.app/)
 
 <!-- API overview image (Insomnia & Mailtrap gifs) -->
 
-Essa API recebe os feedbacks dados pelo frontend, os salva no banco de dados e envia um email para o adminstrador que um novo feedback foi recebido com os dados do feedback.
+This API collect the feedbacks from the frontend, store them in the database and sends an email to the admin that a new feedback has been received with the feedback data
 
 ### CI/CD
 
