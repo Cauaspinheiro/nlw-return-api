@@ -6,7 +6,7 @@ This is the API of the main application of the Next Level Week bootcamp.
 
 ## 📄 Overview
 
-The Feedget is a widget that collects feedbacks inside your application. The user can also take a screenshot of the page to send with the feedback. 
+The Feedget is a widget that collects feedbacks inside your application. The user can also take a screenshot of the page to send with the feedback.
 
 You can see more in the [official website](https://nlw-return-i18n.vercel.app/)
 
@@ -110,9 +110,9 @@ You can install the project's dependencies by running the following command insi
 yarn
 ```
 
-### `.env` - Enviroment variables
+### `.env` - Environment variables
 
-The dotenv file (.env) contains all the enviroment variables of the project. You can see the variable inside the `.env.example` file.
+The dotenv file (.env) contains all the environment variables of the project. You can see the variable inside the `.env.example` file.
 
 To configure the `.env`, you can create a new `.env` file and copy all the `.env.example` content inside this file. Then, complete the value of each key with you configuration.
 
@@ -124,7 +124,7 @@ The [postgres connection string](https://www.postgresql.org/docs/current/libpq-c
 
 #### STMP server config
 
-keys: `SMTP_USER` - `SMTP_PASSWORD` -  `SMTP_PORT` -  `SMTP_HOST`
+keys: `SMTP_USER` - `SMTP_PASSWORD` - `SMTP_PORT` - `SMTP_HOST`
 
 The SMTP configuration to send emails. You have to setup this manually.
 
