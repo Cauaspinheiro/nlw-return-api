@@ -12,7 +12,9 @@ You can see more in the [official website](https://nlw-return-i18n.vercel.app/)
 
 ### API
 
-<!-- API overview image (Insomnia & Mailtrap gifs) -->
+![Overview video](./.github/assets/overview.gif)
+
+[See in video format](https://res.cloudinary.com/dpkgd6rhb/video/upload/v1652060110/github/nlw-return-api-overview_sc0ypz.mp4)
 
 This API collect the feedbacks from the frontend, store them in the database and sends an email to the admin that a new feedback has been received with the feedback data
 
